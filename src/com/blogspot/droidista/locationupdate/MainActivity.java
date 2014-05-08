@@ -90,7 +90,7 @@ public class MainActivity extends Activity {
 		};
 		
 		private String getProgressToDisplay(int progress) {
-			int actualProgress = (progress + 1) * 10;
+			float actualProgress = (progress + 1) - (progress * 0.5f);
 			// 1 = 1
 			// 2 = 1.5
 			// 18 = (19 - 9) = 10
